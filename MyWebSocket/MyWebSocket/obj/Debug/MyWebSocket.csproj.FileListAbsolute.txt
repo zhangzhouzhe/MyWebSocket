@@ -1,0 +1,9 @@
+D:\MyProject\MyWebSocket\MyWebSocket\MyWebSocket\bin\Debug\MyWebSocket.exe.config
+D:\MyProject\MyWebSocket\MyWebSocket\MyWebSocket\bin\Debug\MyWebSocket.exe
+D:\MyProject\MyWebSocket\MyWebSocket\MyWebSocket\bin\Debug\MyWebSocket.pdb
+D:\MyProject\MyWebSocket\MyWebSocket\MyWebSocket\obj\Debug\MyWebSocket.csprojAssemblyReference.cache
+D:\MyProject\MyWebSocket\MyWebSocket\MyWebSocket\obj\Debug\MyWebSocket.csproj.CoreCompileInputs.cache
+D:\MyProject\MyWebSocket\MyWebSocket\MyWebSocket\obj\Debug\MyWebSocket.exe
+D:\MyProject\MyWebSocket\MyWebSocket\MyWebSocket\obj\Debug\MyWebSocket.pdb
+D:\MyProject\MyWebSocket\MyWebSocket\MyWebSocket\bin\Debug\Fleck.dll
+D:\MyProject\MyWebSocket\MyWebSocket\MyWebSocket\obj\Debug\MyWebSocket.csproj.CopyComplete

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Fleck WebSocket</title>
+    <style>
+        .div1 {
+            height: 88px;
+            width: 173px;
+            border: 1px solid blue;
+            margin: auto;
+        }
+
+        h4 {
+            margin: auto;
+        }
+    </style>
+    <script>
+        var webSocket = {};
+        //创建websockt
+        function CreateWebSocket() {
+            webSocket = new WebSocket("ws://127.0.0.1:8888");
+            webSocket.onopen = WebSokectOnOpen;
+            webSocket.onmessage = WebSocketOnMessage;
+            webSocket.onclose = WebSocketOnClose;
+        };
+
+        //���������¼�
+        function WebSokectOnOpen() {
+            //alert("已经打开连接！");
+            webSocket.Send("Open");
+        };
+
+        //�����¼�
+        function WebSocketOnMessage(event) {
+            //监听来自服务端的数据
+            alert(event.data);
+        };
+
+        function WebSocketOnClose() {
+           //监听来自客户端的数据
+            alert('Close');
+        };
+
+        //�����¼�
+        function WebSocketSendMsg() {
+            //获取text中的值
+            var text = document.getElementById("Text1").value;
+            //发送到服务器
+            webSocket.send(text);
+        };
+    </script>
+</head>
+<body onload="CreateWebSocket()">
+    <div class="div1">
+        <input type="text" id="Text1" />
+        <input type="button" onclick="WebSocketSendMsg()" value="发送数据至服务端" />
+    </div>
+</body>
+</html>
